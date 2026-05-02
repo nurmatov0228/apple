@@ -1,0 +1,59 @@
+html {
+  scroll-behavior: smooth;
+}
+/* unbounded-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Unbounded";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../src/Components/Assets/fonts/unbounded-v7-latin-regular.woff2")
+    format("woff2");
+  /* unbounded-500 - latin */
+  @font-face {
+    font-display: swap;
+    font-family: "Unbounded";
+    font-style: normal;
+    font-weight: 500;
+    src: url("../src/Components/Assets/fonts/unbounded-v7-latin-500.woff2")
+      format("woff2");
+  }
+  /* unbounded-600 - latin */
+  @font-face {
+    font-display: swap;
+    font-family: "Unbounded";
+    font-style: normal;
+    font-weight: 600;
+    src: url("../src/Components/Assets/fonts/unbounded-v7-latin-600.woff2")
+      format("woff2");
+  }
+  /* unbounded-700 - latin */
+  @font-face {
+    font-display: swap;
+    font-family: "Unbounded";
+    font-style: normal;
+    font-weight: 700;
+
+    src: url("../src/Components/Assets/fonts/unbounded-v7-latin-700.woff2")
+      format("woff2");
+  }
+  /* unbounded-800 - latin */
+  @font-face {
+    font-display: swap;
+    font-family: "Unbounded";
+    font-style: normal;
+    font-weight: 800;
+
+    src: url("../src/Components/Assets/fonts/unbounded-v7-latin-800.woff2")
+      format("woff2");
+  }
+  /* unbounded-900 - latin */
+  @font-face {
+    font-display: swap;
+    font-family: "Unbounded";
+    font-style: normal;
+    font-weight: 900;
+    src: url("../src/Components/Assets/fonts/unbounded-v7-latin-900.woff2")
+      format("woff2");
+  }
+}

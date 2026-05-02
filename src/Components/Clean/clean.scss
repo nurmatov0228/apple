@@ -1,0 +1,197 @@
+/* RESET (MUHIM) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/* SECTION — FULL SCREEN */
+.clean {
+  background: #f5f7fb;
+  height: 100vh;              /* 🔥 butun ekran */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  color: #111;
+}
+
+/* CONTAINER — CHEKSIZ */
+.clean .container {
+  width: 100%;
+  max-width: 1400px;          /* 🔥 kattaroq qilib qo‘ydik */
+}
+
+/* MAIN FLEX */
+.clean__flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+
+  width: 100%;
+  height: 90vh;               /* 🔥 card ham katta bo‘lsin */
+
+  background: #fff;
+  border-radius: 30px;
+  padding: 60px;
+
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.08);
+}
+
+/* LEFT */
+.clean__left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.clean__left img {
+  width: 100%;
+  max-width: 520px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 25px;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.15);
+  transition: 0.3s ease;
+}
+
+.clean__left img:hover {
+  transform: scale(1.03);
+}
+
+/* BADGE */
+.clean__badge {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+
+  padding: 14px 18px;
+  border-radius: 14px;
+
+  font-size: 13px;
+  color: #333;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* RIGHT */
+.clean__right {
+  flex: 1;
+  max-width: 520px;
+}
+
+/* TAG */
+.clean__tag {
+  display: inline-block;
+  background: #eef2ff;
+  color: #4da3ff;
+
+  padding: 6px 14px;
+  border-radius: 20px;
+
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+/* TITLE */
+.clean__title {
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+/* TEXT */
+.clean__desc {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 18px;
+}
+
+/* CARDS */
+.clean__cards {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+
+.clean__cards .card {
+  flex: 1;
+  background: #f9fafc;
+  border: 1px solid #eee;
+  border-radius: 16px;
+  padding: 20px;
+  transition: 0.3s ease;
+}
+
+.clean__cards .card:hover {
+  transform: translateY(-6px);
+  background: #eef5ff;
+}
+
+/* BUTTONS */
+.clean__buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.primary {
+  background: #4da3ff;
+  color: #fff;
+  padding: 12px 22px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+.primary:hover {
+  background: #1f7cff;
+}
+
+.secondary {
+  background: transparent;
+  border: 1px solid #ddd;
+  color: #333;
+  padding: 12px 22px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.secondary:hover {
+  background: #f0f4ff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .clean__flex {
+    flex-direction: column;
+    height: auto;
+    padding: 40px;
+    text-align: center;
+  }
+
+  .clean__title {
+    font-size: 36px;
+  }
+
+  .clean__cards {
+    flex-direction: column;
+  }
+
+  .clean__left img {
+    height: 300px;
+  }
+}
